@@ -1,68 +1,44 @@
+
 <!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Impressum · MY LIFE APPS</title>
   <style>
-    :root { color-scheme: light; --ink: #282523; --muted: #77716b; --background: #fffaf3; }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--background);
-      color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.55;
-    }
-    main { max-width: 680px; margin: 0 auto; padding: clamp(28px, 7vw, 72px) 20px 48px; }
-    article {
-      background: #fff;
-      border-radius: 24px;
-      padding: clamp(26px, 6vw, 44px);
-      box-shadow: 0 14px 38px rgb(82 66 43 / 9%);
-    }
-    h1 { margin: 0 0 34px; font-size: clamp(2.3rem, 8vw, 3.2rem); line-height: 1.12; letter-spacing: -.035em; }
-    h2 { margin: 0 0 12px; font-size: 1.1rem; line-height: 1.35; }
-    section + section { margin-top: 30px; }
-    p { margin: 0; }
-    address { font-style: normal; }
-    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-    a:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; border-radius: 2px; }
-    nav { display: flex; flex-wrap: wrap; gap: 16px 34px; padding: 30px 16px 0; }
-    nav a { text-decoration: none; }
-    nav a:hover { text-decoration: underline; }
-    footer { padding: 24px 16px 0; color: var(--muted); font-size: .9rem; }
+    :root{--ink:#07152f;--blue:#1877f2;--line:#dce4ef}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#f7f9fc;line-height:1.55}
+    main{max-width:760px;margin:0 auto;padding:32px 24px 64px}
+    header{padding-bottom:28px;border-bottom:1px solid var(--line)}
+    .mark{color:var(--blue);font-weight:800;letter-spacing:.08em;font-size:.8rem}
+    h1{font-size:clamp(2.2rem,8vw,4rem);margin:.2em 0 0;letter-spacing:-.05em;line-height:1}
+    h2{margin:0 0 18px;font-size:1.55rem}
+    h3{margin-top:26px;font-size:1.05rem}
+    section{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;margin-top:22px}
+    address{font-style:normal}
+    a{color:var(--blue);font-weight:650;text-decoration:none}
+    .back{display:inline-block;margin-top:20px}
+    footer{color:#667085;font-size:.9rem;margin-top:36px}
   </style>
 </head>
 <body>
   <main>
-    <article>
+    <header>
+      <div class="mark">MY LIFE APPS</div>
       <h1>Impressum</h1>
-      <section aria-labelledby="anbieter">
-        <h2 id="anbieter">Price of My Life – eine App von:</h2>
-        <address>
-          Tim Heidutzek<br>
-          MY LIFE APPS<br>
-          St.-Bonifatius-Straße 1<br>
-          81541 München<br>
-          Deutschland
-        </address>
-      </section>
-      <section aria-labelledby="kontakt">
-        <h2 id="kontakt">Kontakt:</h2>
-        <p>Tel.: <a href="tel:+4916091122822">0160 91122822</a><br>
-          E-Mail: <a href="mailto:my.life.apps@icloud.com">my.life.apps@icloud.com</a></p>
-      </section>
-      <section aria-labelledby="widnr">
-        <h2 id="widnr">Wirtschafts-Identifikationsnummer (W-IdNr.):</h2>
-        <p>DE280868716</p>
-      </section>
-    </article>
-    <nav aria-label="Weitere Seiten">
-      <a href="./">Startseite</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </nav>
-    <footer>Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG) · Stand: 08.10.2026</footer>
+    </header>
+    <section>
+      <h2>Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)</h2>
+      <h3>Price of My Life – eine App von:</h3>
+      <address>Tim Heidutzek · MY LIFE APPS<br>St.-Bonifatius-Straße 1<br>81541 München<br>Deutschland</address>
+      <h3>Kontakt</h3>
+      <p>Telefon: 0160 91122822<br>E-Mail: <a href="mailto:my.life.apps@icloud.com" aria-label="E-Mail an my.life.apps@icloud.com">my.life.apps [at] icloud [punkt] com</a></p>
+      <h3>Wirtschafts-Identifikationsnummer (W-IdNr.)</h3>
+      <p>DE280868716</p>
+    </section>
+    <a class="back" href="./">← Zurück zu Price of My Life</a>
+    <footer>Stand: 08.10.2026</footer>
   </main>
 </body>
 </html>
